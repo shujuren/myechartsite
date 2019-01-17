@@ -1,0 +1,18 @@
+<!-- myfirstvis/templates/pyecharts.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>数据人网欢迎您</title>
+    {% for jsfile_name in script_list %}
+        <script src="{{ host }}/{{ jsfile_name }}.js"></script>
+    {% endfor %}
+</head>
+
+<body>
+<h1>数据人网欢迎您</h1>
+  {{ myechart|safe }}
+</body>
+
+</html>

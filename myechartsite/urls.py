@@ -8,4 +8,5 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'mycharts/', include('mycharts.urls')),
     url(r'kxian/', include('kxian.urls')),
+    url(r'myapp/', include('myapp.urls')),
 ]
