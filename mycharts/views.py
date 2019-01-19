@@ -9,8 +9,12 @@ from django.http import HttpResponse
 from django.template import loader
 
 from pyecharts import Line3D, Bar,Boxplot,EffectScatter,Bar3D
+from django.shortcuts import render
 
 REMOTE_HOST = "https://pyecharts.github.io/assets/js"
+
+def abc(request):
+    return render(request, 'index.html')
 
 def index(request):
     template = loader.get_template('mychars/index.html')
